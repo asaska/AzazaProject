@@ -1,6 +1,21 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+> This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
+
+# React Native App working with public API and FlatList component
+[![react-native version](https://img.shields.io/badge/react--native-0.55.2-0ba7d3.svg?style=flat-square)](http://facebook.github.io/react-native/releases/0.55.2)
+
+__Usage__
+- Firts tap on list element is open information about post(userID and text of message)
+- Second yap is hide it
+
+<div>
+ <img width="280px" src="https://pp.userapi.com/c847122/v847122407/9ffa2/t9Esvrd_CMY.jpg" />
+<img width="280px" src="https://pp.userapi.com/c848636/v848636407/31af8/h6vZfijuMdY.jpg" />
+
+</div>
+
+---
 
 ## Table of Contents
 
