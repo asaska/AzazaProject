@@ -23,6 +23,14 @@ export default class App extends React.Component {
     />
   );
 
+  renderSeparator = () => {
+    return (
+      <View
+        style={{height: 1, width: '100%', backgroundColor: 'black'}}>
+      </View>
+    )
+  };
+
   render() {
     this.testApi();
     return (
@@ -30,33 +38,13 @@ export default class App extends React.Component {
         <FlatList
           data={this.state.fListData}
           renderItem={this._renderItem}
+          keyExtractor={(item, index) => index.toString()}
+          ItemSeparatorComponent={this.renderSeparator}
         />
       </View>
     );
   }
-
-  /*render() {
-    this.testApi();
-    return (
-      <View style={styles.container}>
-        <FlatList
-          data={this.state.fListData}
-          renderItem={({item}) =>
-            (
-              <View>
-            <Text>{'user '+item.userId}</Text>
-            <Text>{item.id}</Text>
-            <Text>{item.body}</Text>
-              </View>
-            )
-          }
-        />
-      </View>
-    );
-  }*/
 }
-
-
 
 const styles = StyleSheet.create({
   container: {

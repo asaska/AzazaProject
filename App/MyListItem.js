@@ -17,15 +17,14 @@ export default class MyListItem extends React.Component {
     let item = this.props.data;
     const textColor = this.state.selected ? (
       <View>
-        <Text>{item.userId}</Text>
-        <Text>{item.body}</Text>
+        <Text>{'Пользователь №: ' + item.userId}</Text>
+        <Text>{'Сообщение:\n' + item.body}</Text>
       </View>
     ) : <View/>;
-
     return (
       <TouchableOpacity onPress={this._onPress}>
         <View>
-          <Text>{'user ' + item.id}</Text>
+          <Text>{'Сообщение №: ' + item.id}</Text>
           {textColor}
         </View>
       </TouchableOpacity>
